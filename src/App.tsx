@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Header } from './components';
-import { Home, PokemonDetails } from './pages';
+import { Home, Details } from './pages';
 
 const App: React.FC = () => {
     return (
@@ -11,11 +11,7 @@ const App: React.FC = () => {
                 <main className="mdl-layout__content">
                     <div className="page-content">
                         <Route exact path="/" component={Home} />
-                        <Route
-                            exact
-                            path="/pokemon/:id"
-                            component={PokemonDetails}
-                        />
+                        <Route exact path="/pokemon/:id" component={Details} />
                     </div>
                 </main>
             </div>
