@@ -1,0 +1,34 @@
+.pokemoncard {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin: 10px;
+    background: #f5f5f5;
+}
+
+.featured {
+    background: #ce403a;
+    text-align: center;
+}
+
+.pokemoncard:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.pokemoncard-image {
+    border-radius: 5px 5px 0 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.pokemoncard-content {
+    padding: 2px 8px;
+    background-color: #fff;
+}
+
+.pokemoncard .fav {
+    float: left;
+    padding: 8px;
+    color: #363636;
+}
+.pokemoncard .fav.selected {
+    color: #ce403a;
+}
